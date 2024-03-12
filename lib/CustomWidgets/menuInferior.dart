@@ -1,24 +1,25 @@
+//Função que retorna um bottomNavigationBarItem
 import 'package:flutter/material.dart';
 
 BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation) {
-  return bottomNavigationBar(
+  return BottomNavigationBar(
     currentIndex: itemSelecionado,
     onTap: nextStation,
-    selectedItensColor: const Color.fromARGB(255, 3, 114, 205)
-    items:[
-      BottomNavigationBarItem(Icons.home,'Home'),
-      BottomNavigationBarItem(Icons.person,'Perfil'),
-      BottomNavigationBarItem(Icons.favorite,'Favoritos')
-    ]
+    selectedItemColor: Colors.blue,
+    items: [
+      bottomNavigationBarItem(Icons.home, 'Home'),
+      bottomNavigationBarItem(Icons.person, 'Perfil'),
+      bottomNavigationBarItem(Icons.favorite, 'favoritos')
+    ],
   );
 }
 
-BottomNavigationBarItem bottomNavigationBarItem (IconData icon, String texto){
-  return bottomNavigationBarItem(
+BottomNavigationBarItem bottomNavigationBarItem(IconData icon, String texto) {
+  return BottomNavigationBarItem(
     icon: Icon(
       icon,
-      color: Colors.white,
+      color: Colors.blue,
     ),
-    label: texto
+    label: texto,
   );
 }
