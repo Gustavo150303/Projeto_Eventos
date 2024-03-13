@@ -6,6 +6,7 @@ BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation) {
     currentIndex: itemSelecionado,
     onTap: nextStation,
     selectedItemColor: Colors.blue,
+    backgroundColor: Colors.black54,
     items: [
       bottomNavigationBarItem(Icons.home, 'Home'),
       bottomNavigationBarItem(Icons.person, 'Perfil'),
