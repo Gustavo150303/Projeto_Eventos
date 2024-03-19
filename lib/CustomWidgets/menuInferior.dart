@@ -5,8 +5,6 @@ BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation) {
   return BottomNavigationBar(
     currentIndex: itemSelecionado,
     onTap: nextStation,
-    selectedItemColor: Colors.blue,
-    backgroundColor: Colors.black54,
     items: [
       bottomNavigationBarItem(Icons.home, 'Home'),
       bottomNavigationBarItem(Icons.person, 'Perfil'),
@@ -17,10 +15,7 @@ BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation) {
 
 BottomNavigationBarItem bottomNavigationBarItem(IconData icon, String texto) {
   return BottomNavigationBarItem(
-    icon: Icon(
-      icon,
-      color: Colors.blue,
-    ),
+    icon: Icon(icon, color: Colors.white),
     label: texto,
   );
 }
